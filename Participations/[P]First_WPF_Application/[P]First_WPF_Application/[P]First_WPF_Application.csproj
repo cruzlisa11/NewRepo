@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_P_First_WPF_Application</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Colorful Pastel Flower Illustration Desktop Wallpaper.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Colorful Pastel Flower Illustration Desktop Wallpaper.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="_P__WPF___Classes___Files.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P__WPF___Classes___Files"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,10,0,-71" Opacity="0.75">
+        <Grid.Background>
+            <ImageBrush ImageSource="/wp5841620-omg-doll-wallpapers.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="txtManufacturer" HorizontalAlignment="Left" Margin="557,13,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="211" TextChanged="TextBox_TextChanged" Height="37"/>
+        <Label x:Name="lblManufacturer" Content="Insert Manufacturer" HorizontalAlignment="Left" Margin="352,13,0,0" VerticalAlignment="Top" FontSize="20" Background="#00000000" Foreground="White"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="508,68,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="260" TextChanged="TextBox_TextChanged" Height="37"/>
+        <Label x:Name="lblName" Content="Insert Name" HorizontalAlignment="Left" Margin="364,60,0,0" VerticalAlignment="Top" FontSize="20" Background="#00000000" Foreground="White"/>
+        <Label x:Name="lblImage" Content="Insert Image URL&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="249,126,0,0" VerticalAlignment="Top" FontSize="20" Background="#00000000" Foreground="White" Height="37"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="535,163,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtImage" HorizontalAlignment="Left" Margin="435,121,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="333" TextChanged="TextBox_TextChanged" Height="37"/>
+        <TextBox x:Name="txtManufacturer_Copy" HorizontalAlignment="Left" Margin="556,182,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="212" TextChanged="TextBox_TextChanged" Height="37"/>
+        <Label x:Name="lblManufacturer_Copy" Content="Insert Price&#xD;&#xA;" HorizontalAlignment="Left" Margin="435,169,0,0" VerticalAlignment="Top" FontSize="20" Background="#00000000" Foreground="White"/>
+
+    </Grid>
+</Window>

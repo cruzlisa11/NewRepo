@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_P__WPF___Classes___Files</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="wp5841620-omg-doll-wallpapers.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="wp5841620-omg-doll-wallpapers.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Toys.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
