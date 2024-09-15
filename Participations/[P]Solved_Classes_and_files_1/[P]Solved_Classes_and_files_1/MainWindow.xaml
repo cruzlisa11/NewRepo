@@ -1,0 +1,23 @@
+﻿<Window x:Class="_P_Solved_Classes_and_files_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P_Solved_Classes_and_files_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,316,0,0" SelectionChanged="ListBox_SelectionChanged"/>
+        <Label x:Name="lblManufacturer" Content="Manufacturer" HorizontalAlignment="Left" Margin="34,24,0,0" VerticalAlignment="Top" Width="86" FontFamily="Book Antiqua" Background="#FFB6DAE3"/>
+        <TextBox x:Name="txtmanufacturer" HorizontalAlignment="Left" Height="26" Margin="191,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
+        <Label x:Name="lbltoyname" Content="Name" HorizontalAlignment="Left" Margin="34,69,0,0" VerticalAlignment="Top" Width="86" Background="#FFB6DAE3" FontFamily="Book Antiqua"/>
+        <TextBox x:Name="txttoyname" HorizontalAlignment="Left" Height="26" Margin="191,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
+        <Label x:Name="lblprice" Content="Price" HorizontalAlignment="Left" Margin="34,109,0,0" VerticalAlignment="Top" Width="86" Background="#FFB6DAE3" FontFamily="Book Antiqua"/>
+        <TextBox x:Name="txtprice" HorizontalAlignment="Left" Height="26" Margin="191,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
+        <Label x:Name="lblimage" Content="Image (url)" HorizontalAlignment="Left" Margin="34,151,0,0" VerticalAlignment="Top" Width="86" FontFamily="Book Antiqua" Background="#FFB6DAE3"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="191,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="btnsave_toy" Content="Save Toy" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="25" Width="169" Background="#FF83ED7C" FontFamily="Book Antiqua" Click="btnsave_toy_Click" FontWeight="Bold" BorderBrush="#FF398E49" IsDefault="True"/>
+        <Label x:Name="lblToyHeading" Content="Toy List" HorizontalAlignment="Left" Margin="453,26,0,0" VerticalAlignment="Top" Width="324" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Foreground="#FFFBFAFA" Background="#FF4AABC3" FontFamily="Bookman Old Style"/>
+
+    </Grid>
+</Window>
