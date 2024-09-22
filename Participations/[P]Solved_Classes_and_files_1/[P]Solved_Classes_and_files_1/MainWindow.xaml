@@ -7,17 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,316,0,0" SelectionChanged="ListBox_SelectionChanged"/>
-        <Label x:Name="lblManufacturer" Content="Manufacturer" HorizontalAlignment="Left" Margin="34,24,0,0" VerticalAlignment="Top" Width="86" FontFamily="Book Antiqua" Background="#FFB6DAE3"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/pink background.jpg"/>
+        </Grid.Background>
+        <ListBox x:Name="lstToy" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,316,0,0" SelectionChanged="ListBox_SelectionChanged" Background="#FFF19C9F"/>
+        <Label x:Name="lblManufacturer" Content="Manufacturer" HorizontalAlignment="Left" Margin="34,24,0,0" VerticalAlignment="Top" Width="86" FontFamily="Book Antiqua" Background="#FFB6DAE3"Background="#FFF19C9F"/>
         <TextBox x:Name="txtmanufacturer" HorizontalAlignment="Left" Height="26" Margin="191,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
-        <Label x:Name="lbltoyname" Content="Name" HorizontalAlignment="Left" Margin="34,69,0,0" VerticalAlignment="Top" Width="86" Background="#FFB6DAE3" FontFamily="Book Antiqua"/>
+        <Label x:Name="lbltoyname" Content="Name" HorizontalAlignment="Left" Margin="34,69,0,0" VerticalAlignment="Top" Width="86" Background="#FFB6DAE3"Background="#FFF19C9F" FontFamily="Book Antiqua"/>
         <TextBox x:Name="txttoyname" HorizontalAlignment="Left" Height="26" Margin="191,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
-        <Label x:Name="lblprice" Content="Price" HorizontalAlignment="Left" Margin="34,109,0,0" VerticalAlignment="Top" Width="86" Background="#FFB6DAE3" FontFamily="Book Antiqua"/>
+        <Label x:Name="lblprice" Content="Price" HorizontalAlignment="Left" Margin="34,109,0,0" VerticalAlignment="Top" Width="86" Background="#FFB6DAE3"Background="#FFF19C9F" FontFamily="Book Antiqua"/>
         <TextBox x:Name="txtprice" HorizontalAlignment="Left" Height="26" Margin="191,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
-        <Label x:Name="lblimage" Content="Image (url)" HorizontalAlignment="Left" Margin="34,151,0,0" VerticalAlignment="Top" Width="86" FontFamily="Book Antiqua" Background="#FFB6DAE3"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="191,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
-        <Button x:Name="btnsave_toy" Content="Save Toy" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="25" Width="169" Background="#FF83ED7C" FontFamily="Book Antiqua" Click="btnsave_toy_Click" FontWeight="Bold" BorderBrush="#FF398E49" IsDefault="True"/>
-        <Label x:Name="lblToyHeading" Content="Toy List" HorizontalAlignment="Left" Margin="453,26,0,0" VerticalAlignment="Top" Width="324" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Foreground="#FFFBFAFA" Background="#FF4AABC3" FontFamily="Bookman Old Style"/>
+        <Label x:Name="lblimage" Content="Image (url)" HorizontalAlignment="Left" Margin="34,151,0,0" VerticalAlignment="Top" Width="86" FontFamily="Book Antiqua" Background="#FFB6DAE3"Background="#FFF19C9F"/>
+        <TextBox x:Name="txtimageurl" HorizontalAlignment="Left" Height="26" Margin="191,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="btnsave_toy" Content="Save Toy" HorizontalAlignment="Left" Margin="221,0,0,0" VerticalAlignment="Center" Height="25" Width="169" Background="#FF98494B" FontFamily="Book Antiqua" Click="btnsave_toy_Click" FontWeight="Bold" BorderBrush="#FF398E49" IsDefault="True" Foreground="White"/>
+        <Label x:Name="lblToyHeading" Content="Toy List" HorizontalAlignment="Left" Margin="518,24,0,0" VerticalAlignment="Top" Width="215" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Foreground="#FFFBFAFA" Background="#FF787775" FontFamily="Bookman Old Style"/>
+        <Image HorizontalAlignment="Left" Height="162" Margin="518,63,0,0" VerticalAlignment="Top" Width="215" Source="/images (1).jpeg"/>
+        <Image Margin="518,81,67,186" Source="/images (1).jpeg" Stretch="Fill"/>
 
     </Grid>
 </Window>

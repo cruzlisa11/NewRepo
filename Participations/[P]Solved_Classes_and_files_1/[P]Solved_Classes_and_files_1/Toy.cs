@@ -36,5 +36,12 @@ namespace _P_Solved_Classes_and_files_1
             return Aisle;
         }
 
+
+        //you need an override ToString method to display the name of the toy in the listbox
+
+        public override string ToString()
+        {
+            return $"{Manufacturer} - {Name}";
+        }
     }
 }

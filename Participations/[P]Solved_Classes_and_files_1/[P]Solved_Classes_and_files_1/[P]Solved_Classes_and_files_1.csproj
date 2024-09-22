@@ -10,6 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images %281%29.jpeg" />
+    <None Remove="pink background.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images (1).jpeg" />
+    <Resource Include="pink background.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Toys.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
