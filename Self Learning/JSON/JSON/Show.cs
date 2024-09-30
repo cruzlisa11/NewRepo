@@ -31,7 +31,7 @@ namespace JSON
         }
         public override string ToString()
         { //now we will return the show title and the release date
-            return $"{show_title} ({ release_date}) - {genre} - {rating.ToString("N2")}";
+            return $"{show_title} ({ release_date.Year}) - {genre} - {rating.ToString("N2")}";
         }
 
     }

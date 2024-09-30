@@ -23,10 +23,16 @@ namespace JSON
             InitializeComponent();
 
             string json = File.ReadAllText("mock-data_tvhsows.json");
-            List<Show> shows = JsonConvert.DeserializeObject<List<Show>>(json); 
+            List<Show> shows = JsonConvert.DeserializeObject<List<Show>>(json);
+
+            //now lets add the shows to the listbox in the window hint: use the correct item name
+            foreach(Show show in shows)
+            {
+                lstshows.Items.Add(show);
+            }
 
 
-            
+
 
 
         }

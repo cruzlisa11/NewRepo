@@ -1,0 +1,17 @@
+﻿<Window x:Class="_P_JSON_FromAFile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P_JSON_FromAFile"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblChoose" Content="Choose a Color" HorizontalAlignment="Left" Margin="48,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="JSON- From a file" HorizontalAlignment="Left" Height="33" Margin="140,26,0,0" VerticalAlignment="Top" Width="421" HorizontalContentAlignment="Center" FontSize="20"/>
+        <ComboBox x:Name="cboCOLOR" HorizontalAlignment="Left" Margin="33,121,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboCOLOR_SelectionChanged"/>
+        <ListBox x:Name="lstowners" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="241,86,0,54" HorizontalAlignment="Left" Width="331"/>
+        <Button x:Name="getinformation" Content="Get information" HorizontalAlignment="Left" Height="24" Margin="33,157,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click" IsDefault="True"/>
+
+    </Grid>
+</Window>
